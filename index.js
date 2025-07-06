@@ -14,9 +14,9 @@ function update(){
     const now=new Date();
     const gap=newYear-now;
     dayEl.textContent=Math.floor(gap/day).toString().padStart(2,"0");
-    hourEl.textContent=Math.floor((gap%day)/hour);
-    minuteEl.textContent=Math.floor((gap%hour)/minute);
-    secondEl.textContent=Math.floor((gap%minute)/second);
+    hourEl.textContent=Math.floor((gap%day)/hour).toString().padStart(2,"0");;
+    minuteEl.textContent=Math.floor((gap%hour)/minute).toString().padStart(2,"0");;
+    secondEl.textContent=Math.floor((gap%minute)/second).toString().padStart(2,"0");;
 
     setInterval(update,1000);
 }
