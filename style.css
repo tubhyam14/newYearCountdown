@@ -1,0 +1,98 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background: linear-gradient(to bottom, #a698ff ,rgb(205, 87, 255) );
+}
+
+.contaner{
+    background-color: slateblue;
+    width: 98%;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    font-family: cursive;
+    box-shadow: 10px 10px 100px;
+
+
+}
+#head{
+    text-align: center;
+    font-size: 2rem;
+    margin: 10px;
+    text-shadow: 5px 5px 10px rgb(74, 62, 150);
+}
+.value{
+    display: flex;
+    gap: 5%;
+    background-color: rgb(93, 76, 202);
+    width: 100%;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-family: monospace;
+    font-weight: bold;
+
+
+}
+#day{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#hour{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#minute{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#second{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#day::after{
+    content: "Days";
+     font-size: 1.3rem;   
+     font-weight: normal;
+}
+
+#hour::after{
+    content: "Hours";
+    font-size: 1.3rem;   
+    font-weight: normal;
+
+
+}
+
+#minute::after{
+    content: "Minutes";
+    font-size: 1.3rem;   
+    font-weight: normal;
+
+
+}
+
+#second::after{
+    content: "Seconds";
+    font-size: 1.3rem;   
+    font-weight: normal;
+
+
+}
